@@ -5,33 +5,9 @@ Sentiment analysis using Hugging Face transformers library. Trained pre-trained 
 
 ## Citations
 
-
-<details>
-<summary>BibTeX</summary>
-
-@misc{hartmann2022emotionenglish,
-  author={Hartmann, Jochen},
-  title={Emotion English DistilRoBERTa-base},
-  year={2022},
-  howpublished = {\url{https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/}},
-}
+Jochen Hartmann, "Emotion English DistilRoBERTa-base". https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/, 2022.
 
 
-@inproceedings{saravia-etal-2018-carer,
-    title = "{CARER}: Contextualized Affect Representations for Emotion Recognition",
-    author = "Saravia, Elvis  and
-      Liu, Hsien-Chi Toby  and
-      Huang, Yen-Hao  and
-      Wu, Junlin  and
-      Chen, Yi-Shin",
-    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
-    month = oct # "-" # nov,
-    year = "2018",
-    address = "Brussels, Belgium",
-    publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/D18-1404",
-    doi = "10.18653/v1/D18-1404",
-    pages = "3687--3697",
-    abstract = "Emotions are expressed in nuanced ways, which varies by collective or individual experiences, knowledge, and beliefs. Therefore, to understand emotion, as conveyed through text, a robust mechanism capable of capturing and modeling different linguistic nuances and phenomena is needed. We propose a semi-supervised, graph-based algorithm to produce rich structural descriptors which serve as the building blocks for constructing contextualized affect representations from text. The pattern-based representations are further enriched with word embeddings and evaluated through several emotion recognition tasks. Our experimental results demonstrate that the proposed method outperforms state-of-the-art techniques on emotion recognition tasks.",
-}
-</details> 
+
+
+CARER: Contextualized Affect Representations for Emotion Recognition, Elvis Saravia, Hsien-Chi Toby Liu, Yen-Hao Huang, Junlin Wu, Yi-Shin Chen, Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP), October–November 2018, Brussels, Belgium, Published by the Association for Computational Linguistics
