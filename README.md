@@ -1,6 +1,7 @@
 # sentiment-analysis
 
-Sentiment analysis using Hugging Face transformers library. Trained pre-trained model j-hartmann/emotion-english-distilroberta-base (https://huggingface.co/j-hartmann/emotion-english-distilroberta-base) with dair-ai/emotion dataset (https://huggingface.co/datasets/dair-ai/emotion).
+This project performs sentiment and emotion analysis using the Hugging Face transformers library.
+It fine-tunes the pre-trained model j-hartmann/emotion-english-distilroberta-base on the dair-ai/emotion dataset.
 
 
 ## Citations
