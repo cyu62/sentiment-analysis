@@ -1,6 +1,5 @@
 from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer, DataCollatorWithPadding, TrainingArguments, Trainer
 from datasets import load_dataset
-import pandas as pd
 
 dataset = load_dataset("dair-ai/emotion", "split")
 
