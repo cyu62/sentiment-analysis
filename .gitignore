@@ -1,4 +1,5 @@
 .env
-my-emotion-model
 distilbert-results
 datasets
+trainer_output
+text-emotion-model

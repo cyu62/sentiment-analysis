@@ -4,16 +4,19 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 
-def analyze_sentiment(text):
-    model_path = "my-emotion-model"
+def analyze_sentiment(user_input):
+    model_path = "text-emotion-model"
 
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
     classifier = pipeline("text-classification", model=model, tokenizer=tokenizer)
-
-    res = classifier(text)
+    res = classifier(user_input)
     return res
+    # else:
+    #     classifier = pipeline("automatic-speech-recognition", model="jonatasgrosman/wav2vec2-large-xlsr-53-english")
+    #     res = classifier(user_input)
+    #     return res
 
 
 @app.route('/')
@@ -28,6 +31,7 @@ def analyze():
         return redirect(url_for('index'))
     
     results = analyze_sentiment(user_text)[0]
+    print(results)
     
     return render_template('results.html', 
                          text=user_text, 
